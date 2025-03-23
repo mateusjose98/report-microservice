@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/reportms
+    username: postgres
+    password: yourpassword
+
+  sql:
+    init:
+      mode: always # força a execução dos scripts schema.sql e data.sql sempre que iniciar
+      continue-on-error: false # parar caso haja algum erro
