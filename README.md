@@ -7,4 +7,4 @@
 ![img.png](img.png)
 
 ## TODO
-- Handle SQL injection properly.
+- Handle SQL injection properly. - Done

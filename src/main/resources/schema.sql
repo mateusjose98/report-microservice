@@ -6,8 +6,12 @@ CREATE TABLE if not exists report_management (
     report_name VARCHAR(100) NOT NULL,
     query_type VARCHAR(20) NOT NULL, -- 'select' or 'count'
     query TEXT NOT NULL,
+    params TEXT NOT NULL,
     PRIMARY KEY (report_name, query_type)
 );
+
+;
+
 
 
 CREATE TABLE if not exists employees (
