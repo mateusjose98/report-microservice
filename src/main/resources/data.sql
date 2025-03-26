@@ -1,13 +1,13 @@
 delete from employees;
 delete from report_management;
 
-INSERT INTO report_management(report_name, query_type, query, params) VALUES
+INSERT INTO report_management(report_name, query_type, query, params, report_description) VALUES
 ('employee', 'select',
  'SELECT id, name, position, salary FROM employees WHERE id=? LIMIT ? OFFSET ?',
- 'empId,limit,offset'),
+ 'empId,limit,offset', 'Employee report'),
 ('employee', 'count',
  'SELECT COUNT(*) FROM employees WHERE id=?',
- 'empId');
+ 'empId', 'Employee count report'),;
 
 
 INSERT INTO employees (name, position, salary) VALUES

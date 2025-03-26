@@ -4,6 +4,7 @@ drop table if exists employees;
 
 CREATE TABLE if not exists report_management (
     report_name VARCHAR(100) NOT NULL,
+    report_description TEXT NOT NULL,
     query_type VARCHAR(20) NOT NULL, -- 'select' or 'count'
     query TEXT NOT NULL,
     params TEXT NOT NULL,

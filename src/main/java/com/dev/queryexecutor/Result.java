@@ -21,6 +21,10 @@ public class Result {
         this.totalPages = (int) Math.ceil((double) totalCount / size);
     }
 
+    public static Result empty() {
+        return new Result(List.of(), 0L, 0, 0);
+    }
+
     public List<Map<String, Object>> getRecords() {
         return records;
     }
